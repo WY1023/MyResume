@@ -1,0 +1,189 @@
+/* 
+* @Author: Stephen Wang
+* @Date:   2016-09-10 09:38:58
+* @Last Modified time: 2016-11-18 21:07:24
+*/
+@font-face{
+font-family: MyFont1;
+src:url(../fonts/indigojo.ttf);
+font-family: MyFont2;
+src:url(../fonts/fzkatjw.ttf);
+}
+* {
+    margin:0; 
+    padding:0; 
+    font-family:MyFont2;
+    font-size:large;
+}
+.portrait{
+    position:absolute; 
+    top:10%; 
+    left:45%; 
+    border-radius: 100% 100%; 
+    background:url("../images/portrait.jpg") no-repeat; 
+    background-size:100%;
+    width:150px; 
+    height:150px;
+    background-position: 0% 15%;
+}
+.brief p{
+    line-height:3;
+}
+.brief{ 
+    width: 100% ;
+    position:absolute;
+    top:40%;
+    left:38%;
+}
+.lefttop{
+    width: 5%;
+    position:absolute;
+    top:5%;
+    left:15%;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+}
+.rightbottom{
+    width:5%;
+    position:absolute;
+    top:85%;
+    left:80%;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+}
+#section1{
+    background: -ms-linear-gradient(top, #CCCCFF,  #99CCCC);        /* IE 10 */
+    background:-moz-linear-gradient(top,#CCCCFF,  #99CCCC);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CCCCFF), to(#99CCCC));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCFF), to(#99CCCC));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #CCCCFF,  #99CCCC;)   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #CCCCFF,  #99CCCC);  /*Opera 11.10+*/
+}
+#section2{
+    background: -ms-linear-gradient(top, #CCCCFF,  #99CCCC);        /* IE 10 */
+    background:-moz-linear-gradient(top,#CCCCFF,  #99CCCC);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CCCCFF), to(#99CCCC));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCFF), to(#99CCCC));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #CCCCFF,  #99CCCC;)   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #CCCCFF,  #99CCCC);  /*Opera 11.10+*/
+}
+#section2 h1{
+    position: absolute;
+    top:-50px; 
+    left:48%;
+    font-size: larger;
+    z-index:-1;
+}
+.progressBars{
+    position: absolute;
+    top: 15%; 
+    left: 40%;
+    width: 50%
+}
+.progressBar {
+    width: 50%;
+    height: 22px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin:10px 0;
+}
+.progressBar div {
+    height: 100%;
+    color: #ccc;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color:#FF6666;
+    border-radius: 10px;
+}
+#section3{
+    background: -ms-linear-gradient(top, #CCCCFF,  #99CCCC);        /* IE 10 */
+    background:-moz-linear-gradient(top,#CCCCFF,  #99CCCC);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CCCCFF), to(#99CCCC));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCFF), to(#99CCCC));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #CCCCFF,  #99CCCC;)   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #CCCCFF,  #99CCCC);  /*Opera 11.10+*/
+}
+#section3 h1{
+    position: absolute;
+    top:-50px; 
+    left:48%;
+    font-size: larger;
+    z-index:-1;
+}
+.fp-controlArrow.fp-next{
+    right:4%;
+}
+.fp-controlArrow.fp-prev{
+    left:5%; 
+}
+#boxID1{position: relative;top:25%;left:10%;}
+#boxID2{position: relative;top:25%;left:10%;}
+.mF_luluJQ_wrap{height:100%;}
+.mF_luluJQ{ position:relative;}
+.mF_luluJQ .pic{width:100%;}
+.mF_luluJQ .pic li{position:absolute; background:#000;}
+.mF_luluJQ .pic li a{display:block;width:100%;height:100%;position:relative;text-decoration:none;overflow:hidden;}
+.mF_luluJQ .pic li a span{display:block;position:relative;width:100%;height:34px;line-height:34px;overflow:hidden;}
+.mF_luluJQ .pic li a span b{display:block;position:relative;color:#fff;padding-left:16px;font-size:14px;z-index:1;cursor:pointer;}
+.mF_luluJQ .pic li a span i{position:absolute;left:0;top:0;width:100%;height:100%;filter:alpha(opacity=50);opacity: 0.5;background:#000;}
+.slide>p{
+    }
+#section4{
+    background: -ms-linear-gradient(top, #CCCCFF,  #99CCCC);        /* IE 10 */
+    background:-moz-linear-gradient(top,#CCCCFF,  #99CCCC);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CCCCFF), to(#99CCCC));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCFF), to(#99CCCC));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #CCCCFF,  #99CCCC;)   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #CCCCFF,  #99CCCC);  /*Opera 11.10+*/
+}
+#section4 h1{
+    position: absolute;
+    top:-50px; 
+    left:42%;
+    font-size: 25px;
+    z-index:-1;
+}
+.p4bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background: url(../images/bg4_5884ee0.png) repeat-x 0 0;
+    background-size: 100% 100%;
+    -webkit-animation: mountain 60s linear 0s infinite alternate both;
+    animation: mountain 60s linear 0s infinite alternate both;
+}
+.callme p{z-index: -1;line-height: 3;position: absolute;left:43%;top:25%; font-size: 19px; font-weight:500;}
+.social {position: absolute;left:38%;top:70%;z-index: -1;}
+#section5{
+    background: -ms-linear-gradient(top, #CCCCFF,  #99CCCC);        /* IE 10 */
+    background:-moz-linear-gradient(top,#CCCCFF,  #99CCCC);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#CCCCFF), to(#99CCCC));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCFF), to(#99CCCC));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #CCCCFF,  #99CCCC;)   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #CCCCFF,  #99CCCC);  /*Opera 11.10+*/
+    height: 100%;
+}
+#musicframe{
+    position: fixed; 
+    bottom:4%;
+    left:10px;
+    z-index: 1000;
+}
+@keyframes mountain {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 1000px 0
+    }
+}

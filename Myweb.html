@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" http-equiv="Content-Type" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Myweb</title>
+        <link rel="stylesheet prefetch" href="css/font-awesome.min.css">
+        <link rel="stylesheet"  type="text/css" href="css/jquery.fullPage.css">
+        <link rel="stylesheet"  type="text/css" href="css/Myweb.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+    </head>
+    <body>   
+        <div id="fullpage">
+            <div class="section" id="section1">
+                <div class="portrait animated fadeInRight"></div>
+                <img class="lefttop" src="images/1.png" alt=""> 
+                <img class="rightbottom"  src="images/1.png" alt="">
+                <div class="brief animated fadeInLeft">
+                    <p>
+                    Hi~我是汪宇，英文名Stephen Wang~<br>
+                    是一个期望成为Web开发攻城狮的前端爱好者<br>
+                    郑州大学软件开发专业的应届生<br>
+                    较多的开发经验·较强的自学能力<br>
+                    一腔热血的激情·一个像素的执着
+                    </p>
+                </div>
+            </div>
+            <!-- end of section1 -->
+            <div class="section" id="section2">
+                <h1>Skills</h1>
+                <div class="progressBars">
+                   CSS3<div class="progressBar bar1"><div></div></div>
+                   HTML5<div class="progressBar bar2"><div></div></div>
+                   EcmaScript6(JavaScript)<div class="progressBar bar3"><div></div></div>
+                   Jquery<div class="progressBar bar4"><div></div></div>
+                   Asp.Net<div class="progressBar bar5"><div></div></div>
+                   Bootstrap<div class="progressBar bar6"><div></div></div>
+                   Sass/Less<div class="progressBar bar7"><div></div></div>
+                   PhotoShop<div class="progressBar bar8"><div></div></div>
+                </div>
+            </div>
+            <!--  end of section2 -->
+            <div class="section" id="section3">
+            <h1>作品展示</h1> 
+                <div class="slide" data-anchor="slide1">
+                    <div id="boxID1"><!--焦点图盒子-->
+                        <div class="pic"><!--内容列表(li数目可随意增减)-->
+                            <ul>
+                                <li><a href="#"><img src="images/a1.png" thumb="11111111111" alt="aaa" text="某某某系统" /></a></li>
+                                <li><a href="#"><img src="images/a2.png" thumb="1" alt="aaa" text="某某某系统" /></a></li>
+                                <li><a href="#"><img src="images/a3.png" thumb="" alt="标题2" text="详细描述2" /></a></li>
+                                <li><a href="#"><img src="images/a4.png" thumb="" alt="标题2" text="详细描述2" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Slide 1-->
+                <div class="slide" data-anchor="slide2">
+                    <div id="boxID2"><!--焦点图盒子--> 
+                        <div class="pic"><!--内容列表(li数目可随意增减)-->
+                            <ul>
+                                <li><a href="#"><img src="images/b1.png" thumb="" alt="aaa" text="某某某系统" /></a></li>
+                                <li><a href="#"><img src="images/b2.png" thumb="" alt="aaa" text="某某某系统" /></a></li>
+                                <li><a href="#"><img src="images/b3.png" thumb="" alt="标题2" text="详细描述2" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- Slide 2-->
+                <div class="slide" data-anchor="slide3"> Slide 3 </div><!-- Slide 3-->
+                <div class="slide" data-anchor="slide4"> Slide 4 </div><!-- Slide 4 -->
+            </div>
+            <!-- end of section3 -->
+            <div class="section" id="section4">
+            <div class="p4bg"></div>
+            <h1>联系方式/社交账号</h1>
+            <div class="callme">
+            <p>
+            Wechat:wy635053502<br>
+            QQ：635053502<br>
+            邮箱：stephenwangyu@qq.com<br>
+            电话：13949007331
+            </p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/lengziyu" class="call-item"><img src="images/call_github_27ab678.png"></a>
+                <a href="https://www.zhihu.com/people/lengziyu" class="call-item"><img src="images/call_zhihu_4567c70.png"></a>
+                <a href="###" class="call-item"><img src="images/call_SF_bc8ac67.png"></a>
+                <a href="http://weibo.com/u/2654033501" class="call-item"><img src="images/call_weibo_53e7ffa.png"></a>
+                <a class="call-item modal-trigger" href="#modal-wx"><img src="images/call_wx_ac6ac72.png">
+            </div>
+            </div>
+            <!-- end of section4 -->
+     <iframe id="musicframe" frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=75 src="http://music.163.com/outchain/player?type=2&id=496549&auto=0&height=66"></iframe>   
+            <div id='ss_menu'>
+                <div>
+                    <i class="fa fa-github"></i>
+                </div>
+                <div>
+                    <i class="fa fa-weibo"></i>
+                </div>
+                <div>
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div>
+                    <i class="fa fa-renren"></i>
+                </div>
+                <div class='menu'>
+                    <div class='share' id='ss_toggle' data-rot='180'>
+                        <div class='circle'></div>
+                        <div class='bar'></div>
+                    </div>
+                  </div>
+            </div><!-- end of ss_menu -->
+    </div>
+     <!-- end of fullpage-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js "></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="js/jquery-css-transform.js" type="text/javascript"></script>
+        <script src="js/jquery.fullPage.js"></script>
+        <script src="js/move.js"></script> 
+        <script src="js/myfocus-2.0.4.min.js" type="text/javascript" ></script>
+        <script src="js/icon.js"></script>
+        <script src="js/myweb.js"></script>
+        <script src="js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>  
+    </body>
+</html>
