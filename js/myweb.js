@@ -28,13 +28,13 @@ $(document).ready(function(){
                              move('.rightbottom').rotate(-1).duration('2').end();
                             break;
                             case 2:
-                                progress(80, $('.bar1'));
-                                progress(85, $('.bar2'));
-                                progress(80, $('.bar3'));
-                                progress(75, $('.bar4'));
-                                progress(70, $('.bar5'));
-                                progress(90, $('.bar6'));
-                                progress(70, $('.bar7'));
+                                progress(95, $('.bar1'));
+                                progress(90, $('.bar2'));
+                                progress(90, $('.bar3'));
+                                progress(85, $('.bar4'));
+                                progress(80, $('.bar5'));
+                                progress(95, $('.bar6'));
+                                progress(75, $('.bar7'));
                                 progress(85, $('.bar8'));
                                 $('#section2>h1').css('z-index','10');
                                 move('#section2>h1').to(0,100).duration('4s').end();
@@ -91,3 +91,32 @@ function progress(percent, $element) {
             height:(hei/1.7),//设置图片区域高度(像素)
             txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
          });
+$("#wx").bind("click",function(){ openNew();$('.popCon>img').attr("src","images/Wechat.png");});
+function openNew(){
+    //获取页面的高度和宽度
+    var sWidth=document.body.scrollWidth;
+    var sHeight=document.body.scrollHeight;
+    //获取页面的可视区域高度和宽度
+    var wHeight=document.documentElement.clientHeight;
+    var oMask=document.createElement("div");
+        oMask.id="mask";
+        oMask.style.height=sHeight+"px";
+        oMask.style.width=sWidth+"px";
+        document.body.appendChild(oMask);
+    var oPop=document.createElement("div");
+        oPop.id="pop";
+        oPop.innerHTML="<div class='popCon'><img><div id='close'>点击关闭</div></div>";
+        document.body.appendChild(oPop);
+    //获弹出框的宽和高
+    var dHeight=oPop.offsetHeight;
+    var dWidth=oPop.offsetWidth;
+        //设置弹出框的left和top
+        oPop.style.left=(sWidth-dWidth)/2+"px";
+        oPop.style.top=(wHeight-dHeight)/2+"px";
+    //点击关闭按钮
+    var oClose=document.getElementById("close");
+        //点击弹出框以外的区域也可以关闭弹出框
+        oClose.onclick=oMask.onclick=function(){
+                    document.body.removeChild(oPop);
+                    document.body.removeChild(oMask);
+                    };}
