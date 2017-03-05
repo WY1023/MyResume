@@ -3,6 +3,12 @@
 * @Date:   2016-09-11 15:00:47
 * @Last Modified time: 2016-11-18 20:25:59
 */
+$(".fakeloader").fakeLoader({
+  timeToHide:11200, //加载效果的持续时间
+  zIndex:"999",//
+  spinner:"spinner1",//可选值 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 对应有7种效果
+  bgColor:"#2ecc71", //加载时的背景颜色
+});
 var wid = document.documentElement.clientWidth;
 var hei = document.documentElement.clientHeight;
 window.onresize = function () {
@@ -37,11 +43,11 @@ $(document).ready(function(){
                                 progress(75, $('.bar7'));
                                 progress(85, $('.bar8'));
                                 $('#section2>h1').css('z-index','10');
-                                move('#section2>h1').to(0,100).duration('4s').end();
+                                move('#section2>h1').to(0,80).duration('4s').end();
                             break;
                             case 3: 
                                 $('#section3>h1').css('z-index','10');
-                                move('#section3>h1').to(0,100).duration('4s').end();
+                                move('#section3>h1').to(0,80).duration('4s').end();
                             break;
                             case 4:
                                 $('.social').css('z-index','1');
@@ -106,7 +112,7 @@ function openNew(){
     var oPop=document.createElement("div");
         oPop.id="pop";
         oPop.innerHTML="<div class='popCon'><img><div id='close'>点击关闭</div></div>";
-        document.body.appendChild(oPop);
+        document.body.appendChild(oPop); 
     //获弹出框的宽和高
     var dHeight=oPop.offsetHeight;
     var dWidth=oPop.offsetWidth;
